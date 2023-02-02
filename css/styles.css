@@ -22,6 +22,100 @@ section a {
     text-decoration: none;
 }
 
+.container{
+    padding: 1rem;
+}
+
+/*********************** typography ********************/
+h2 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/***************** main ********************/
+.container section {
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.container section:nth-of-type(even) {
+    background-color: #3d1f10;
+}
+
+.container section:nth-of-type(odd) {
+    background-color: #b04507;
+}
+
 section a:hover {
     background-color: rgba(0,0,0,0.6);
+}
+
+section div {
+    padding: 0.5rem
+}
+
+@media screen and (min-width: 540px) {
+    .container section {
+        display: flex;
+        align-items: center;
+    }
+
+    section img,
+    section div {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-flow: wrap;
+        gap: 2%;
+    }
+
+    .container section {
+        width: calc(98%/2);
+    }
+
+    h2 {
+        width: 100%;
+    }
+}
+
+@media screen and (mid-width: 1850px) {
+    .container {
+        max-width: 112.5rem;
+    }
+}
+
+h2 {
+    order: -3;
+}
+
+.fall {
+    order: -2;
+}
+
+.embrace {
+    order: -1;
+}
+
+.better {
+    order: 1;
+}
+
+.dried {
+    order: 0;
+}
+
+.hues {
+    order: 2;
+}
+
+.leaf {
+    order: 3;
 }
